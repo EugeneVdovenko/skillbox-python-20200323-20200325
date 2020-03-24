@@ -16,9 +16,9 @@ def get_message(after):
 def print_message(message):
     text = message['text']
     nick = message['username']
-    timestamp = message['time']
+    timestamp = float(message['time'])
 
-    ct = datetime.fromtimestamp(timestamp).strftime('%H:$M:%S')
+    ct = datetime.fromtimestamp(timestamp).strftime('%H:%M:%S')
 
     print(ct, nick)
     print(text)
