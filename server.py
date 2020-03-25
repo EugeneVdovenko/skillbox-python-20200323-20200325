@@ -106,7 +106,7 @@ def history():
 @app.route("/install")
 def install():
     """
-    Содание базы данных и пользователя Joe
+    Создание базы данных и пользователя Joe
     :return: JSON {"ok": true}
     """
     db.create_all()
